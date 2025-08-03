@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
         }}
       >
         <div className="property-image">
-          <img src="src/assets/images/airbnb1a.jpg" alt="Featured property" />
+          <img src="/images/airbnb1a.jpg" alt="Featured property" />
           <div className="property-tag">Featured</div>
         </div>
         <div className="property-details">
