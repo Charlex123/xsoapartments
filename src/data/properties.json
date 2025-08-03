@@ -27,16 +27,16 @@
       "checkOut": "11:00 AM"
     },
     "images": [
-      { "id": 1, "url": "/images/airbnb1a.jpg", "alt": "Living room" },
-      { "id": 2, "url": "/images/airbnb1b.jpg", "alt": "Bedroom" },
-      { "id": 2, "url": "/images/airbnb1c.jpg", "alt": "Bedroom" },
-      { "id": 2, "url": "/images/airbnb1d.jpg", "alt": "Bedroom" },
-      { "id": 2, "url": "/images/airbnb1e.jpg", "alt": "Bedroom" },
-      { "id": 2, "url": "/images/airbnb1f.jpg", "alt": "Bedroom" },
-      { "id": 2, "url": "/images/airbnb1g.jpg", "alt": "Bedroom" },
-      { "id": 2, "url": "/images/airbnb1h.jpg", "alt": "Bedroom" },
-      { "id": 2, "url": "/images/airbnb1i.jpg", "alt": "Bedroom" },
-      { "id": 2, "url": "/images/airbnb1j.jpg", "alt": "Bedroom" }
+      { "id": 1, "url": "/airbnb1a.jpg", "alt": "Living room" },
+      { "id": 2, "url": "/airbnb1b.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "/airbnb1c.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "/airbnb1d.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "/airbnb1e.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "/airbnb1f.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "/airbnb1g.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "/airbnb1h.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "/airbnb1i.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "/airbnb1j.jpg", "alt": "Bedroom" }
     ]
   },
   {
@@ -67,14 +67,14 @@
       "checkOut": "10:00 AM"
     },
     "images": [
-      { "id": 1, "url": "/images/airbnb2a.jpg", "alt": "Airbnb " },
-      { "id": 2, "url": "/images/airbnb2b.jpg", "alt": "Swimming pool" },
-      { "id": 2, "url": "/images/airbnb2c.jpg", "alt": "Swimming pool" },
-      { "id": 2, "url": "/images/airbnb2d.jpg", "alt": "Swimming pool" },
-      { "id": 2, "url": "/images/airbnb2e.jpg", "alt": "Swimming pool" },
-      { "id": 2, "url": "/images/airbnb2f.jpg", "alt": "Swimming pool" },
-      { "id": 2, "url": "/images/airbnb2g.jpg", "alt": "Swimming pool" },
-      { "id": 2, "url": "/images/airbnb2h.jpg", "alt": "Swimming pool" }
+      { "id": 1, "url": "/airbnb2a.jpg", "alt": "Airbnb " },
+      { "id": 2, "url": "/airbnb2b.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "/airbnb2c.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "/airbnb2d.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "/airbnb2e.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "/airbnb2f.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "/airbnb2g.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "/airbnb2h.jpg", "alt": "Swimming pool" }
     ]
   }
 ]
