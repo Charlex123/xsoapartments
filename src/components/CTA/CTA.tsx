@@ -41,7 +41,7 @@ const CTA: React.FC = () => {
           </motion.p>
           <motion.div className="cta-buttons" variants={itemVariants}>
             <motion.a 
-              href="/properties" 
+              href="/#properties" 
               className="btn-primary"
               whileHover={{ 
                 scale: 1.05,

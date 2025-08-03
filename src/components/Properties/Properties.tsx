@@ -9,7 +9,7 @@ const Properties: React.FC = () => {
   const properties = PropertiesData as Property[];
 
   return (
-    <section className="properties-section">
+    <section className="properties-section" id="properties">
       <div className="container">
         <h2 className="section-title">Featured Properties</h2>
         <p className="section-subtitle">Discover your perfect stay</p>
