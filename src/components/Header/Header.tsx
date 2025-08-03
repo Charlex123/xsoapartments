@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence, type Variants } from 'framer-motion';
+import { motion, AnimatePresence, type Variants, color } from 'framer-motion';
 import { FiX, FiUser } from 'react-icons/fi';
 import './Header.css';
 
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
             whileTap={{ scale: 0.95 }}
           >
             <FiUser />
-            <span><a href='/#properties'>Book AirBnb</a></span>
+            <span><a href='/#properties' style={{color: 'white'}}>Book AirBnb</a></span>
           </motion.button>
           {/* <motion.button 
             className="menu-toggle"
