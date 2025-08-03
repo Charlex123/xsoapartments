@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence, type Variants, color } from 'framer-motion';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { FiX, FiUser } from 'react-icons/fi';
 import './Header.css';
 
