@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Luxury Downtown Apartment",
+    "location": "Wolverhampton, UK",
+    "price": 200,
+    "type": "AirBnb Apartment",
+    "beds": 2,
+    "baths": 1,
+    "area": 850,
+    "features": ["City View", "Balcony", "Smart TV", "Workspace"],
+    "amenities": {
+      "Netflix": true,
+      "WiFi": true,
+      "Hair dryer": true,
+      "Heating": true,
+      "Microwave": true,
+      "Fridge": true,
+      "Baby crib on request": false,
+      "Washing machine": true
+    },
+    "rules": {
+      "smoking": false,
+      "pets": true,
+      "parties": false,
+      "checkIn": "3:00 PM",
+      "checkOut": "11:00 AM"
+    },
+    "images": [
+      { "id": 1, "url": "src/assets/images/airbnb1a.jpg", "alt": "Living room" },
+      { "id": 2, "url": "src/assets/images/airbnb1b.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "src/assets/images/airbnb1c.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "src/assets/images/airbnb1d.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "src/assets/images/airbnb1e.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "src/assets/images/airbnb1f.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "src/assets/images/airbnb1g.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "src/assets/images/airbnb1h.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "src/assets/images/airbnb1i.jpg", "alt": "Bedroom" },
+      { "id": 2, "url": "src/assets/images/airbnb1j.jpg", "alt": "Bedroom" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Modern Beachfront Villa",
+    "location": "Wolverhampton, UK",
+    "price": 350,
+    "type": "AirBnb Apartment",
+    "beds": 4,
+    "baths": 3,
+    "area": 1800,
+    "features": ["Ocean View", "Private Pool", "Terrace", "BBQ Area"],
+    "amenities": {
+      "Netflix": true,
+      "WiFi": true,
+      "Hair dryer": true,
+      "Heating": false,
+      "Microwave": true,
+      "Fridge": true,
+      "Baby crib on request": true,
+      "Washing machine": true
+    },
+    "rules": {
+      "smoking": false,
+      "pets": false,
+      "parties": true,
+      "checkIn": "4:00 PM",
+      "checkOut": "10:00 AM"
+    },
+    "images": [
+      { "id": 1, "url": "src/assets/images/airbnb2a.jpg", "alt": "Airbnb " },
+      { "id": 2, "url": "src/assets/images/airbnb2b.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "src/assets/images/airbnb2c.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "src/assets/images/airbnb2d.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "src/assets/images/airbnb2e.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "src/assets/images/airbnb2f.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "src/assets/images/airbnb2g.jpg", "alt": "Swimming pool" },
+      { "id": 2, "url": "src/assets/images/airbnb2h.jpg", "alt": "Swimming pool" }
+    ]
+  }
+]

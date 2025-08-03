@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Luxury Downtown Apartment",
+    "location": "London, UK",
+    "price": 200,
+    "type": "Apartment",
+    "beds": 2,
+    "baths": 1,
+    "area": 850,
+    "features": ["City View", "Balcony", "Smart TV", "Workspace"],
+    "amenities": {
+      "Netflix": true,
+      "WiFi": true,
+      "Hair dryer": true,
+      "Heating": true,
+      "Microwave": true,
+      "Fridge": true,
+      "Baby crib on request": false,
+      "Washing machine": true
+    },
+    "rules": {
+      "smoking": false,
+      "pets": true,
+      "parties": false,
+      "checkIn": "3:00 PM",
+      "checkOut": "11:00 AM"
+    },
+    "images": [
+      { "id": 1, "url": "/images/property1.jpg", "alt": "Living room" },
+      { "id": 2, "url": "/images/property1-bedroom.jpg", "alt": "Bedroom" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Modern Beachfront Villa",
+    "location": "Barcelona, Spain",
+    "price": 350,
+    "type": "Villa",
+    "beds": 4,
+    "baths": 3,
+    "area": 1800,
+    "features": ["Ocean View", "Private Pool", "Terrace", "BBQ Area"],
+    "amenities": {
+      "Netflix": true,
+      "WiFi": true,
+      "Hair dryer": true,
+      "Heating": false,
+      "Microwave": true,
+      "Fridge": true,
+      "Baby crib on request": true,
+      "Washing machine": true
+    },
+    "rules": {
+      "smoking": false,
+      "pets": false,
+      "parties": true,
+      "checkIn": "4:00 PM",
+      "checkOut": "10:00 AM"
+    },
+    "images": [
+      { "id": 1, "url": "/images/villa1.jpg", "alt": "Villa exterior" },
+      { "id": 2, "url": "/images/villa1-pool.jpg", "alt": "Swimming pool" }
+    ]
+  }
+]

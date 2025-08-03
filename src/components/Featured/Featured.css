@@ -1,0 +1,126 @@
+/* Featured.css */
+.featured-section {
+  font-family: "Poppins", sans-serif;
+  padding: 6rem 0;
+  background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(67, 97, 238, 0.15);
+  border-color: rgba(67, 97, 238, 0.2);
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #fc7d94, #FF385C);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, rgba(67, 97, 238, 0.1) 0%, rgba(67, 97, 238, 0.05) 100%);
+  color: #FF385C;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(67, 97, 238, 0.1);
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: rotate(5deg) scale(1.05);
+  box-shadow: 0 12px 24px rgba(67, 97, 238, 0.2);
+}
+
+.feature-title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #111827;
+  letter-spacing: -0.5px;
+}
+
+.feature-description {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .featured-section {
+    padding: 5rem 0;
+  }
+  
+  .features-grid {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-section {
+    padding: 4rem 0;
+  }
+  
+  .feature-card {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .feature-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .feature-card {
+    padding: 2.5rem 1.5rem;
+  }
+}
