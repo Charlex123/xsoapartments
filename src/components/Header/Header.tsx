@@ -111,7 +111,7 @@ const Header: React.FC = () => {
             whileTap={{ scale: 0.95 }}
           >
             <FiUser />
-            <span>Book AirBnb</span>
+            <span><a href='/#properties'>Book AirBnb</a></span>
           </motion.button>
           {/* <motion.button 
             className="menu-toggle"
