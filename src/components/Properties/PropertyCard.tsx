@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiHeart, FiMapPin, FiHome, FiLayers, FiDroplet, FiChevronLeft, FiChevronRight, FiMessageSquare, FiX } from 'react-icons/fi';
+import { FiHeart, FiMapPin, FiHome, FiLayers, FiDroplet, FiChevronLeft, FiChevronRight, FiMessageSquare, FiX, FiNavigation } from 'react-icons/fi';
 import './PropertyCard.css';
 
 interface PropertyImage {
@@ -34,6 +34,7 @@ export interface Property {
   location: string;
   price: number;
   type: string;
+  description: string;
   beds: number;
   baths: number;
   area: number;
@@ -74,6 +75,11 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
     const message = `Hi, I'm interested in booking ${property.title} (ID: ${property.id}) at £${calculatePrice()}/night.`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/447466242549?text=${encodedMessage}`, '_blank');
+  };
+
+  const openDirections = () => {
+    const destination = encodeURIComponent(property.location);
+    window.open(`https://www.google.com/maps/dir/?api=1&destination=${destination}`, '_blank');
   };
 
   return (
@@ -156,13 +162,19 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
         
         <div className="property-actions">
-            <button 
+            <button
               className="view-details-button"
               onClick={(e) => { e.stopPropagation(); setIsModalOpen(true); }}
             >
               View Details
             </button>
-            <button 
+            <button
+              className="directions-button"
+              onClick={(e) => { e.stopPropagation(); openDirections(); }}
+            >
+              <FiNavigation /> Directions
+            </button>
+            <button
               className="whatsapp-button"
               onClick={(e) => { e.stopPropagation(); openWhatsApp(); }}
             >
@@ -232,7 +244,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
               
               <div className="modal-section">
                 <h3>Description</h3>
-                <p>This beautiful {property.type.toLowerCase()} features {property.beds} comfortable beds and {property.baths} modern bathrooms. Perfect for your stay in {property.location.split(',')[0]}.</p>
+                <p style={{ whiteSpace: 'pre-line', lineHeight: '1.7' }}>{property.description}</p>
               </div>
               
               <div className="modal-section">

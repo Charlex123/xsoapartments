@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
       <div className="hero-container">
         <motion.div className="hero-content" variants={containerVariants}>
           <motion.h1 variants={itemVariants}>
-            Find Your Perfect Escape With <span>XSOAPPARTMENT</span>
+            Find Your Perfect Escape With <span>XSO APARTMENT</span>
           </motion.h1>
           
           <motion.p className="hero-subtitle" variants={itemVariants}>
@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
           <h3>Wolverhampton, WV1 1JA,</h3>
           <p>Wolverhampton, United Kingdom</p>
           <div className="property-price">
-            <span>$100</span> / night
+            <span>£100</span> / night
           </div>
         </div>
       </motion.div>

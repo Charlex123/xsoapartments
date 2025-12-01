@@ -1,10 +1,11 @@
 [
   {
     "id": 1,
-    "title": "Luxury Downtown Apartment",
+    "title": "A two-bedroom flat featuring two double beds, one single bed,  equipped kitchen, and a sofa bed.",
     "location": "Wolverhampton, UK",
     "price": 200,
     "type": "AirBnb Apartment",
+    "description": "Enjoy a comfy, stylish city life experience at this centrally-located accommodation. This unique, contemporary two-bedroom apartment features 4 double beds, 2 single beds, and 2 sofa beds in the heart of Wolverhampton city centre, offering modern city living experience with unbeatable convenience. Just a few yards away from shops, restaurants, the famous Broad Street, Wolverhampton University, Wolverhampton Train Station, and Wolverhampton Grand Theatre. 10 minutes walk to Wolverhampton Molineux Stadium and 4 minutes drive to Wolverhampton New Cross Hospital. Family-friendly with a spacious layout. Easy access to motorways M54, M6, M5, Birmingham, Birmingham Airport/NEC, and Manchester within hours via public transport. Ample parking is available.",
     "beds": 2,
     "baths": 1,
     "area": 850,
@@ -41,10 +42,11 @@
   },
   {
     "id": 2,
-    "title": "Modern Beachfront Villa",
+    "title": "A two-bedroom flat featuring two double beds, one single bed,  equipped kitchen, and a sofa bed.",
     "location": "Wolverhampton, UK",
     "price": 350,
     "type": "AirBnb Apartment",
+    "description": "Enjoy a comfy, stylish city life experience at this centrally-located accommodation. This unique, contemporary two-bedroom apartment features 4 double beds, 2 single beds, and 2 sofa beds in the heart of Wolverhampton city centre, offering modern city living experience with unbeatable convenience. Just a few yards away from shops, restaurants, the famous Broad Street, Wolverhampton University, Wolverhampton Train Station, and Wolverhampton Grand Theatre. 10 minutes walk to Wolverhampton Molineux Stadium and 4 minutes drive to Wolverhampton New Cross Hospital. Family-friendly with a spacious layout. Easy access to motorways M54, M6, M5, Birmingham, Birmingham Airport/NEC, and Manchester within hours via public transport. Ample parking is available.",
     "beds": 4,
     "baths": 3,
     "area": 1800,

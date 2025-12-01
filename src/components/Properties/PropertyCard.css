@@ -172,6 +172,25 @@
   background: #e61e4d;
 }
 
+/* Directions Button */
+.directions-button {
+  background: #4285F4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+
+.directions-button:hover {
+  background: #3367D6;
+}
+
 /* WhatsApp Button */
 .whatsapp-button {
   background: #25D366;
