@@ -48,31 +48,35 @@ interface PropertyCardProps {
   property: Property;
 }
 
+const WEEKDAY_PRICE = 100;
+const WEEKEND_PRICE = 120;
+
 const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isWeekendPrice, setIsWeekendPrice] = useState(() => {
+    const today = new Date();
+    return today.getDay() === 0 || today.getDay() === 6;
+  });
 
   const nextImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === property.images.length - 1 ? 0 : prev + 1
     );
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === 0 ? property.images.length - 1 : prev - 1
     );
   };
 
-  const calculatePrice = () => {
-    const today = new Date();
-    const isWeekend = today.getDay() === 0 || today.getDay() === 6;
-    return isWeekend ? 120 : 100;
-  };
+  const currentPrice = isWeekendPrice ? WEEKEND_PRICE : WEEKDAY_PRICE;
 
   const openWhatsApp = () => {
-    const message = `Hi, I'm interested in booking ${property.title} (ID: ${property.id}) at £${calculatePrice()}/night.`;
+    const priceType = isWeekendPrice ? 'weekend' : 'weekday';
+    const message = `Hi, I'm interested in booking ${property.title} (ID: ${property.id}) at £${currentPrice}/night (${priceType} rate).`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/447466242549?text=${encodedMessage}`, '_blank');
   };
@@ -132,7 +136,20 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
       <div className="property-details">
         <div className="property-header">
           <h3>{property.title}</h3>
-          <p className="price">£{calculatePrice()}/night</p>
+          <div className="price-section">
+            <p className="price">£{currentPrice}/night</p>
+            <div className="price-toggle" onClick={(e) => e.stopPropagation()}>
+              <span className={!isWeekendPrice ? 'active' : ''}>Weekday</span>
+              <button
+                className={`toggle-switch ${isWeekendPrice ? 'weekend' : ''}`}
+                onClick={() => setIsWeekendPrice(!isWeekendPrice)}
+                aria-label="Toggle price"
+              >
+                <span className="toggle-knob" />
+              </button>
+              <span className={isWeekendPrice ? 'active' : ''}>Weekend</span>
+            </div>
+          </div>
         </div>
         
         <div className="property-location">
@@ -222,9 +239,22 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
                 <span>{property.location}</span>
               </div>
               
-              <div className="modal-price">
-                <span>£{calculatePrice()}/night</span>
-                {calculatePrice() === 120 && <span className="weekend-badge">Weekend Rate</span>}
+              <div className="modal-price-section">
+                <div className="modal-price">
+                  <span>£{currentPrice}/night</span>
+                  {isWeekendPrice && <span className="weekend-badge">Weekend Rate</span>}
+                </div>
+                <div className="price-toggle modal-toggle">
+                  <span className={!isWeekendPrice ? 'active' : ''}>Weekday £{WEEKDAY_PRICE}</span>
+                  <button
+                    className={`toggle-switch ${isWeekendPrice ? 'weekend' : ''}`}
+                    onClick={() => setIsWeekendPrice(!isWeekendPrice)}
+                    aria-label="Toggle price"
+                  >
+                    <span className="toggle-knob" />
+                  </button>
+                  <span className={isWeekendPrice ? 'active' : ''}>Weekend £{WEEKEND_PRICE}</span>
+                </div>
               </div>
               
               <div className="modal-features">

@@ -1,39 +1,12 @@
-import React, { useCallback, useState } from 'react';
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import React from 'react';
 import { FiStar, FiMapPin, FiHeart, FiCheckCircle, FiNavigation, FiClock, FiPhone } from 'react-icons/fi';
 import PropertiesData from '../../data/properties.json';
 import './Featured.css';
 
-const mapContainerStyle = {
-  width: '100%',
-  height: '400px',
-  borderRadius: '1rem',
-};
-
-// Wolverhampton, UK coordinates
-const center = {
-  lat: 52.5870,
-  lng: -2.1288,
-};
-
 const Featured: React.FC = () => {
-  const [, setMap] = useState<google.maps.Map | null>(null);
-
   // Get location from first property
   const propertyLocation = PropertiesData[0]?.location || 'Wolverhampton, UK';
-
-  const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY || '',
-  });
-
-  const onLoad = useCallback((map: google.maps.Map) => {
-    setMap(map);
-  }, []);
-
-  const onUnmount = useCallback(() => {
-    setMap(null);
-  }, []);
+  const mapQuery = encodeURIComponent(propertyLocation);
 
   const handleGetDirections = () => {
     const destination = encodeURIComponent(propertyLocation);
@@ -91,24 +64,16 @@ const Featured: React.FC = () => {
 
           <div className="location-content">
             <div className="map-container">
-              {isLoaded ? (
-                <GoogleMap
-                  mapContainerStyle={mapContainerStyle}
-                  center={center}
-                  zoom={14}
-                  onLoad={onLoad}
-                  onUnmount={onUnmount}
-                  options={{
-                    streetViewControl: false,
-                    mapTypeControl: false,
-                    fullscreenControl: true,
-                  }}
-                >
-                  <Marker position={center} />
-                </GoogleMap>
-              ) : (
-                <div className="map-loading">Loading map...</div>
-              )}
+              <iframe
+                title="Property Location"
+                width="100%"
+                height="400"
+                style={{ border: 0, borderRadius: '1rem' }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=${mapQuery}`}
+              />
             </div>
 
             <div className="directions-info">
@@ -128,7 +93,9 @@ const Featured: React.FC = () => {
                 </div>
                 <div className="info-content">
                   <h4>Check-in Hours</h4>
-                  <p>3:00 PM - 10:00 PM</p>
+                  <p>3:00 PM</p>
+                  <h4>Check-out Hours</h4>
+                  <p>11:00 AM</p>
                 </div>
               </div>
 
