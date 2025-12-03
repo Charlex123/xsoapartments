@@ -3,12 +3,12 @@
     "id": 1,
     "title": "A two-bedroom flat featuring two double beds, one single bed,  equipped kitchen, and a sofa bed.",
     "location": "5-15 Broad Street,Wolverhampton Wv11JA",
-    "price": 200,
+    "price": 120,
     "type": "AirBnb Apartment",
     "description": "Enjoy a comfy, stylish city life experience at this centrally-located accommodation. This unique, contemporary two-bedroom apartment features 2 beds, 1 single beds, and 1 sofa bed in the heart of Wolverhampton city centre, offering modern city living experience with unbeatable convenience. Just a few yards away from shops, restaurants, the famous Broad Street, Wolverhampton University, Wolverhampton Train Station, and Wolverhampton Grand Theatre. 10 minutes walk to Wolverhampton Molineux Stadium and 4 minutes drive to Wolverhampton New Cross Hospital. Family-friendly with a spacious layout. Easy access to motorways M54, M6, M5, Birmingham, Birmingham Airport/NEC, and Manchester within hours via public transport. Ample parking is available.",
     "beds": 2,
     "baths": 1,
-    "area": 850,
+    "area": 14,
     "features": ["City View", "Balcony", "Smart TV", "Workspace"],
     "amenities": {
       "Netflix": true,
@@ -44,12 +44,12 @@
     "id": 2,
     "title": "Xso City Centre Luxury Apartments, 2 unit flat with Netflix, Sofa bed, Sleeps 6 each",
     "location": "5-15 Broad Street,Wolverhampton Wv11JA",
-    "price": 350,
+    "price": 120,
     "type": "AirBnb Apartment",
     "description": "Enjoy a comfy, stylish city life experience at this centrally-located accommodation. This unique, contemporary two-bedroom apartment features 2 beds, 1 single bed, and 1 sofa bed in the heart of Wolverhampton city centre, offering modern city living experience with unbeatable convenience. Just a few yards away from shops, restaurants, the famous Broad Street, Wolverhampton University, Wolverhampton Train Station, and Wolverhampton Grand Theatre. 10 minutes walk to Wolverhampton Molineux Stadium and 4 minutes drive to Wolverhampton New Cross Hospital. Family-friendly with a spacious layout. Easy access to motorways M54, M6, M5, Birmingham, Birmingham Airport/NEC, and Manchester within hours via public transport. Ample parking is available.",
     "beds": 2,
     "baths": 1,
-    "area": 1800,
+    "area": 14,
     "features": ["Terrace", "BBQ Area"],
     "amenities": {
       "Netflix": true,
@@ -65,8 +65,8 @@
       "smoking": false,
       "pets": false,
       "parties": true,
-      "checkIn": "4:00 PM",
-      "checkOut": "10:00 AM"
+      "checkIn": "3:00 PM",
+      "checkOut": "11:00 AM"
     },
     "images": [
       { "id": 1, "url": "/images/airbnb2a.jpg", "alt": "Airbnb " },
