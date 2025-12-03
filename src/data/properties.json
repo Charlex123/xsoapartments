@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "A two-bedroom flat featuring two double beds, one single bed,  equipped kitchen, and a sofa bed.",
+    "title": "Xso City Centre Luxury Apartments, 2 unit flat with Netflix, Sofa bed, Sleeps 6 each",
     "location": "5-15 Broad Street,Wolverhampton Wv11JA",
     "price": 120,
     "type": "AirBnb Apartment",
@@ -50,7 +50,7 @@
     "beds": 2,
     "baths": 1,
     "area": 14,
-    "features": ["Terrace", "BBQ Area"],
+    "features": [""],
     "amenities": {
       "Netflix": true,
       "WiFi": true,

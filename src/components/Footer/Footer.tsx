@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <FiMail />
-                <span>contact@xsoapartments.co.uk</span>
+                <span>idexglobalpropertyy@gmail.com</span>
               </li>
               <li>
                 <FiPhone />
